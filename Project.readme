@@ -21,5 +21,13 @@
 2.What components the project contains.
 	Hardware
 		Arduino Uno
+		Spectrum Shield
+		LEDs
+		Speakers
+	Software
+		Fetch frequncy from Spectrum Shield
+		Control the LEDs
+		Control the Speakers
+		Merge them together
 
 
