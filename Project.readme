@@ -5,3 +5,21 @@
    3. The design steps.
    4. The codes structure.
    */
+
+1. How the project works.
+	The project has the following inputs:
+		Audio
+		Buttons
+		Cmds from Computer
+	The project has the following outputs:
+		LEDs(changing as the audio's frequency)
+		Speakers
+	
+	The project could visualize the audio input's frequency
+	using color LEDs.
+
+2.What components the project contains.
+	Hardware
+		Arduino Uno
+
+
