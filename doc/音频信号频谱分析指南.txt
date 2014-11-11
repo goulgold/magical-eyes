@@ -1,0 +1,59 @@
+音频信号频谱分析指南
+
+Arduino Audio Spectrum Shield
+使用的是MSGEQ7芯片，datasheet在/ref/MSGEQ7.pdf处，详细说明了芯片的使用方法。
+
+简单来说，音频通过音频线，以模拟信号的形式传入该芯片，经过分频处理之后，以数字/模拟信号的形式传出。具体的时序图和示例代码可以参见以下网址：
+
+https://www.sparkfun.com/products/10306
+
+已经有大量的示例代码，我摘抄其中一个供参考：
+
+
+// Example 48.1 - tronixstuff.com/tutorials > chapter 48 - 30 Jan 2013 
+// MSGEQ7 spectrum analyser shield - basic demonstration
+int strobe = 4; // strobe pins on digital 4
+int res = 5; // reset pins on digital 5
+int left[7]; // store band values in these arrays
+int right[7];
+int band;
+void setup()
+{
+ Serial.begin(115200);
+ pinMode(res, OUTPUT); // reset
+ pinMode(strobe, OUTPUT); // strobe
+ digitalWrite(res,LOW); // reset low
+ digitalWrite(strobe,HIGH); //pin 5 is RESET on the shield
+}
+void readMSGEQ7()
+// Function to read 7 band equalizers
+{
+ digitalWrite(res, HIGH);
+ digitalWrite(res, LOW);
+ for(band=0; band <7; band++)
+ {
+ digitalWrite(strobe,LOW); // strobe pin on the shield - kicks the IC up to the next band 
+ delayMicroseconds(30); // 
+ left[band] = analogRead(0); // store left band reading
+ right[band] = analogRead(1); // ... and the right
+ digitalWrite(strobe,HIGH); 
+ }
+}
+void loop()
+{
+ readMSGEQ7();
+ // display values of left channel on serial monitor
+ for (band = 0; band < 7; band++)
+ {
+ Serial.print(left[band]);
+ Serial.print(" ");
+ }
+ Serial.println();
+// display values of right channel on serial monitor
+ for (band = 0; band < 7; band++)
+ {
+ Serial.print(right[band]);
+ Serial.print(" ");
+ }
+ Serial.println();
+}
