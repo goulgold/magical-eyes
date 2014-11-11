@@ -1,0 +1,16 @@
+LED点亮指南
+
+LED器件的datasheet参见/ref/WS2812.pdf，里面对这个器件如何工作的原理讲的十分清楚。
+
+简单来说，原理是用一根数据线向LED阵列（就是LED串联）中写入二进制数据，比如：
+
+1011011000....11010101010
+
+其中前24bit点亮第一个LED，第二个24bit点亮第二个LED，以此类推。比如，有三个LED，那么就写入长度为24x3=72个bit。
+
+这24bit中，每8个bit代表一个颜色。
+
+具体如何实现，可以参考以下网址的library：
+
+https://github.com/adafruit/Adafruit_NeoPixel
+https://learn.adafruit.com/adafruit-neopixel-uberguide/arduino-library
