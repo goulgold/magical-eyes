@@ -7,14 +7,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/Users/Qiming/Sources/1016/library.h",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/C++/C++.sublime-build",
 	"command_palette":
@@ -40,6 +32,18 @@
 	},
 	"file_history":
 	[
+		"/Users/Qiming/Downloads/VHDL",
+		"/Users/Qiming/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/368E21BC-0547-4616-B892-78A626F0876B/decoder.v",
+		"/Users/Qiming/Desktop/2014Fall/embeddedsystem/Lab/lab6/keypad.v",
+		"/Users/Qiming/Desktop/2014Fall/embeddedsystem/Lab/lab6/decoder.v",
+		"/Users/Qiming/Desktop/2014Fall/embeddedsystem/Lab/lab6/keypad.vhd",
+		"/Users/Qiming/Desktop/2014Fall/embeddedsystem/Lab/lab6/keypad_example.c",
+		"/Users/Qiming/Sources/magical-eyes/doc/LED点亮指南.txt",
+		"/Users/Qiming/Sources/magical-eyes/doc/Meeting记录.txt",
+		"/Users/Qiming/Sources/magical-eyes/doc/日程安排.txt",
+		"/Users/Qiming/Sources/magical-eyes/Project.readme",
+		"/Users/Qiming/Sources/magical-eyes/ref/Design Order list.xlsx",
+		"/Users/Qiming/Sources/1016/library.h",
 		"/Users/Qiming/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/Users/Qiming/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/Qiming/Sources/1016/Makefile",
@@ -47,7 +51,7 @@
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -61,13 +65,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"4",
+			"cnt"
 		],
 		"highlight": true,
-		"in_selection": false,
+		"in_selection": true,
 		"preserve_case": false,
 		"regex": false,
 		"replace_history":
 		[
+			"5"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -80,34 +87,6 @@
 		{
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/Users/Qiming/Sources/1016/library.h",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2596.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -117,7 +96,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 33.0
 	},
 	"layout":
 	{
@@ -148,7 +127,7 @@
 	},
 	"replace":
 	{
-		"height": 0.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
