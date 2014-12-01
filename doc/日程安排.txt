@@ -23,7 +23,7 @@ http://www.adafruit.com/products/1612
 调试电路
 实验按以下步骤进行：
 1.用example code验证arduino可以正常工作 （done）
-2.将Speaker焊接好，可以正常发声
+2.将Speaker焊接好，可以正常发声(done)
 	焊接一条音频线
 	将喇叭和board焊接到一起
 	用电脑测试可以正常发声
