@@ -3,7 +3,7 @@
 // Which pin on the Arduino is connected to the NeoPixels?
 #define PIN            6
 // The amplitude of how much led is work.
-#define DEBUG_AMP      2.5
+#define DEBUG_AMP      5
 
 // MSGEQ7 Control
 int strobe = 4; // strobe pins on digital 4
