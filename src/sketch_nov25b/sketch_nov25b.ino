@@ -89,7 +89,7 @@ void loop() {
       {
         for( int j = 0; j < DIM; j++ )
         {
-          pixels.setPixelColor(i, pixels.Color(100, 0, 0));
+          pixels.setPixelColor(led_strip_number[i][j], pixels.Color(100, 0, 0));
           pixels.show();
           delayMicroseconds(500);
         }
@@ -104,12 +104,30 @@ void loop() {
         int amp = test>i?200:0;
         int pick = random(1,4);
         switch(pick){
-          case 1: pixels.setPixelColor(i, pixels.Color(0,amp,0)); break;
-          case 2: pixels.setPixelColor(i, pixels.Color(amp,0,0)); break;
-          default: pixels.setPixelColor(i, pixels.Color(0,0,amp)); 
+          case 1: pixels.setPixelColor(led_strip_number[i][j], pixels.Color(0,amp,0)); break;
+          case 2: pixels.setPixelColor(led_strip_number[i][j], pixels.Color(amp,0,0)); break;
+          default: pixels.setPixelColor(led_strip_number[i][j], pixels.Color(0,0,amp)); 
         }  
         pixels.show(); // This sends the updated pixel color to the hardware.
       }
+      break;
+    }
+    case FREQ_2:
+    {
+      //The amplitude of one frequency is sliced to DIM sections
+      int FRE_SLICE = 255/DIM;
+
+      for (int i = 0; i < FRE; ++i)
+      {
+        int dim_max = left[i]/FRE_SLICE;
+        for (int j = 0; j < DIM; ++j)
+        {
+          // The jth leds should be lighted or not
+          int amp = dim_max > j ? 200 : 0;
+          pixels.setPixelColor(led_strip_number[i][j], pixels.Color(amp, 0, 0));
+        }
+      }
+      pixels.show();
       break;
     }
 
