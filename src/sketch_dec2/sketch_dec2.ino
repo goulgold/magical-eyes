@@ -18,7 +18,7 @@ int right[7];
 #define FREQ_3 4
 #define FREQ_4 5
 
-int state = FREQ_3;
+int state = INIT;
 
 
 // The led strip parameter
@@ -81,6 +81,33 @@ void setup() {
   color[3][5] = pixels.Color(102,255,102);
   color[3][6] = pixels.Color(153,255,153);
   color[3][7] = pixels.Color(204,255,204);
+  //BLUE
+  color[4][0] = pixels.Color(0,0,102);
+  color[4][1] = pixels.Color(0,0,153);
+  color[4][2] = pixels.Color(0,0,204);
+  color[4][3] = pixels.Color(0,0,255);
+  color[4][4] = pixels.Color(51,51,255);
+  color[4][5] = pixels.Color(102,102,255);
+  color[4][6] = pixels.Color(153,153,255);
+  color[4][7] = pixels.Color(204,204,255);
+  //PURPLE
+  color[5][0] = pixels.Color(102,0,102);
+  color[5][1] = pixels.Color(153,0,153);
+  color[5][2] = pixels.Color(204,0,204);
+  color[5][3] = pixels.Color(255,0,255);
+  color[5][4] = pixels.Color(255,51,255);
+  color[5][5] = pixels.Color(255,102,255);
+  color[5][6] = pixels.Color(255,153,255);
+  color[5][7] = pixels.Color(255,204,204);
+  //VIOLET
+  color[6][0] = pixels.Color(102,0,51);
+  color[6][1] = pixels.Color(153,0,76);
+  color[6][2] = pixels.Color(204,0,102);
+  color[6][3] = pixels.Color(255,0,127);
+  color[6][4] = pixels.Color(255,51,153);
+  color[6][5] = pixels.Color(255,102,178);
+  color[6][6] = pixels.Color(255,153,204);
+  color[6][7] = pixels.Color(255,204,229);
   
   pixels.begin(); // This initializes the NeoPixel library.
   Serial.begin(9600);
@@ -128,7 +155,7 @@ void loop() {
       {
         for( int j = 0; j < DIM; j++ )
         {
-          pixels.setPixelColor(led_strip_number[i][j], pixels.Color(0, 20, 0));
+          pixels.setPixelColor(led_strip_number[i][j], color[i][j]);
           pixels.show();
           delay(100);
         }
