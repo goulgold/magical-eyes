@@ -91,7 +91,7 @@ void loop() {
         {
           pixels.setPixelColor(led_strip_number[i][j], pixels.Color(100, 0, 0));
           pixels.show();
-          delayMicroseconds(500);
+          delayMicroseconds(100);
         }
       }
       break;

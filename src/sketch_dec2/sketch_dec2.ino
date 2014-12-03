@@ -18,7 +18,7 @@ int right[7];
 #define FREQ_3 4
 #define FREQ_4 5
 
-int state = INIT;
+int state = FREQ_4;
 
 
 // The led strip parameter
@@ -46,7 +46,7 @@ int delayval = 500; // delay for half a second
 int band;
 
 void setup() {
-  color[0][0] = 324;
+  color[0][0] = pixels.Color(53,0,0);
   color[0][1] = pixels.Color(153,0,0);
   color[0][2] = pixels.Color(204,0,0);
   color[0][3] = pixels.Color(255,0,0);
@@ -232,8 +232,8 @@ void loop() {
         for (int j = 0; j < DIM; ++j)
         {
           // The jth leds should be lighted or not
-          int amp = dim_max > j ? 20 : 0;
-          pixels.setPixelColor(led_strip_number[i][j], pixels.Color(0,amp,0));
+          uint32_t amp = dim_max > j ? color[i][j]: 0;
+          pixels.setPixelColor(led_strip_number[i][j], amp);
         }  
         }
       pixels.show();
