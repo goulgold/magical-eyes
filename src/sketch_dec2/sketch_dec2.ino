@@ -3,7 +3,7 @@
 // Which pin on the Arduino is connected to the NeoPixels?
 #define PIN            6
 // The amplitude of how much led is work.
-#define DEBUG_AMP      1.8
+#define DEBUG_AMP      1.5
 
 // MSGEQ7 Control
 int strobe = 4; // strobe pins on digital 4
@@ -168,7 +168,7 @@ void loop() {
       for(int i=0;i<NUMPIXELS;i++){
         // pixels.Color takes RGB values, from 0,0,0 up to 255,255,255
         int test=left[5]/42;
-        int amp = test>i?200:0;
+        int amp = test>i?20:0;
         int pick = random(1,4);
         switch(pick){
           case 1: pixels.setPixelColor(i, pixels.Color(0,amp,0)); break;
@@ -190,7 +190,7 @@ void loop() {
         for (int j = 0; j < DIM; ++j)
         {
           // The jth leds should be lighted or not
-          int amp = dim_max > j ? 20 : 0;
+          int amp = dim_max > j ? 100 : 0;
           int pick = random(1,4);
           switch(pick){
             case 1: pixels.setPixelColor(led_strip_number[i][j], pixels.Color(0,amp,0)); break;
@@ -214,7 +214,7 @@ void loop() {
         for (int j = 0; j < DIM; ++j)
         {
           // The jth leds should be lighted or not
-          int amp = dim_max > j ? 20 : 0;
+          int amp = dim_max > j ? 150 : 0;
           pixels.setPixelColor(led_strip_number[i][j], pixels.Color(amp,0,0));
         }  
         }
