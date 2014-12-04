@@ -3,7 +3,7 @@
 // Which pin on the Arduino is connected to the NeoPixels?
 #define PIN            6
 // The amplitude of how much led is work.
-#define DEBUG_AMP      2
+#define DEBUG_AMP      1.8
 
 // MSGEQ7 Control
 int strobe = 4; // strobe pins on digital 4
@@ -46,50 +46,51 @@ int delayval = 500; // delay for half a second
 int band;
 
 void setup() {
-  color[0][0] = pixels.Color(53,0,0);
-  color[0][1] = pixels.Color(153,0,0);
-  color[0][2] = pixels.Color(204,0,0);
-  color[0][3] = pixels.Color(255,0,0);
-  color[0][4] = pixels.Color(255,51,51);
-  color[0][5] = pixels.Color(255,102,102);
-  color[0][6] = pixels.Color(255,153,153);
-  color[0][7] = pixels.Color(255,204,204);
+  //RED
+  color[0][0] = pixels.Color(255,0,0);
+  color[0][1] = pixels.Color(255,26,26);
+  color[0][2] = pixels.Color(255,51,51);
+  color[0][3] = pixels.Color(255,77,77);
+  color[0][4] = pixels.Color(255,102,102);
+  color[0][5] = pixels.Color(255,128,128);
+  color[0][6] = pixels.Color(255,154,154);
+  color[0][7] = pixels.Color(255,179,179);
   //ORANGE
-  color[1][0] = pixels.Color(102,51,0);
-  color[1][1] = pixels.Color(153,76,0);
-  color[1][2] = pixels.Color(204,102,0);
-  color[1][3] = pixels.Color(204,128,0);
-  color[1][4] = pixels.Color(255,153,51);
-  color[1][5] = pixels.Color(255,178,102);
-  color[1][6] = pixels.Color(255,204,153);
-  color[1][7] = pixels.Color(255,229,204);
+  color[1][0] = pixels.Color(255,128,0);
+  color[1][1] = pixels.Color(255,141,26);
+  color[1][2] = pixels.Color(255,154,51);
+  color[1][3] = pixels.Color(255,166,77);
+  color[1][4] = pixels.Color(255,179,102);
+  color[1][5] = pixels.Color(255,192,128);
+  color[1][6] = pixels.Color(255,205,154);
+  color[1][7] = pixels.Color(255,218,179);
   //YELLOW
-  color[2][0] = pixels.Color(102,102,0);
-  color[2][1] = pixels.Color(153,153,0);
-  color[2][2] = pixels.Color(204,204,0);
-  color[2][3] = pixels.Color(255,255,0);
-  color[2][4] = pixels.Color(255,255,51);
-  color[2][5] = pixels.Color(255,255,102);
-  color[2][6] = pixels.Color(255,255,153);
-  color[2][7] = pixels.Color(255,255,204);
+  color[2][0] = pixels.Color(255,213,0);
+  color[2][1] = pixels.Color(255,218,26);
+  color[2][2] = pixels.Color(255,222,51);
+  color[2][3] = pixels.Color(255,226,77);
+  color[2][4] = pixels.Color(255,230,102);
+  color[2][5] = pixels.Color(255,235,128);
+  color[2][6] = pixels.Color(255,239,154);
+  color[2][7] = pixels.Color(255,243,179);
   //GREEN
-  color[3][0] = pixels.Color(0,102,0);
-  color[3][1] = pixels.Color(0,153,0);
-  color[3][2] = pixels.Color(0,204,0);
-  color[3][3] = pixels.Color(0,255,0);
-  color[3][4] = pixels.Color(51,255,51);
-  color[3][5] = pixels.Color(102,255,102);
-  color[3][6] = pixels.Color(153,255,153);
-  color[3][7] = pixels.Color(204,255,204);
+  color[3][0] = pixels.Color(0,255,0);
+  color[3][1] = pixels.Color(26,255,26);
+  color[3][2] = pixels.Color(51,255,51);
+  color[3][3] = pixels.Color(77,255,77);
+  color[3][4] = pixels.Color(102,255,102);
+  color[3][5] = pixels.Color(128,255,128);
+  color[3][6] = pixels.Color(154,255,154);
+  color[3][7] = pixels.Color(179,255,179);
   //BLUE
-  color[4][0] = pixels.Color(0,0,102);
-  color[4][1] = pixels.Color(0,0,153);
-  color[4][2] = pixels.Color(0,0,204);
-  color[4][3] = pixels.Color(0,0,255);
-  color[4][4] = pixels.Color(51,51,255);
-  color[4][5] = pixels.Color(102,102,255);
-  color[4][6] = pixels.Color(153,153,255);
-  color[4][7] = pixels.Color(204,204,255);
+  color[4][0] = pixels.Color(0,0,255);
+  color[4][1] = pixels.Color(26,26,255);
+  color[4][2] = pixels.Color(51,51,255);
+  color[4][3] = pixels.Color(77,77,255);
+  color[4][4] = pixels.Color(102,102,255);
+  color[4][5] = pixels.Color(128,128,255);
+  color[4][6] = pixels.Color(154,154,255);
+  color[4][7] = pixels.Color(179,179,255);
   //PURPLE
   color[5][0] = pixels.Color(102,0,102);
   color[5][1] = pixels.Color(153,0,153);
@@ -100,14 +101,14 @@ void setup() {
   color[5][6] = pixels.Color(255,153,255);
   color[5][7] = pixels.Color(255,204,204);
   //VIOLET
-  color[6][0] = pixels.Color(102,0,51);
-  color[6][1] = pixels.Color(153,0,76);
-  color[6][2] = pixels.Color(204,0,102);
-  color[6][3] = pixels.Color(255,0,127);
-  color[6][4] = pixels.Color(255,51,153);
-  color[6][5] = pixels.Color(255,102,178);
-  color[6][6] = pixels.Color(255,153,204);
-  color[6][7] = pixels.Color(255,204,229);
+  color[6][0] = pixels.Color(137,0,255);
+  color[6][1] = pixels.Color(148,26,255);
+  color[6][2] = pixels.Color(160,51,255);
+  color[6][3] = pixels.Color(172,77,255);
+  color[6][4] = pixels.Color(184,102,255);
+  color[6][5] = pixels.Color(196,128,255);
+  color[6][6] = pixels.Color(208,154,255);
+  color[6][7] = pixels.Color(220,179,255);
   
   pixels.begin(); // This initializes the NeoPixel library.
   Serial.begin(9600);
@@ -239,13 +240,7 @@ void loop() {
       pixels.show();
       break;
     }
-    
-    
     }
- 
-
-
-
 }
 
 
