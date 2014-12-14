@@ -88,8 +88,11 @@ There has been plenty of chips that could implement the functions of frequency a
 
 To simply our project, we chose an intelligent control LED integrated light source called WS2812. It integrates control circuit and RGB chip together in a package forming a complete control of pixel point. Each primary color could achieve 256 brightness display to complete almost 16M color display and scan frequency not less than 400Hz/s. And it could work in cascading port transmission signal mode by single line. The technical details would be introduced in the following section.
 
+We use the Arduino Uno as our control system. It is a microcontroller board based on the ATmega328. It has 14 digital input/output pins (of which 6 can be used as PWM outputs), 6 analog inputs, a 16 MHz ceramic resonator, a USB connection, a power jack, an ICSP header, and a reset button. It contains everything needed to support the microcontroller; simply connect it to a computer with a USB cable or power it with a AC-to-DC adapter or battery to get started.
 
+The last component of our project is loudspeaker sub-system consisted of a loudspeaker and an audio amplifier. we chose a 2.5W Class D Audio Amplifier to drive our loudspeaker. This amplifier is able to deliver up to 2.5 Watts speakers. The A+ and A- inputs of the amplifier go through 1.0uF capacitors, we could tie the Audio+ pin to audio signal and tie the Audio- pin to ground.
 
+Before our design procedure, we could use a block diagram to demonstrate our project including both hardware and software. 
 
 \section{Technology Details/Contribution}
 
