@@ -92,7 +92,18 @@ We use the Arduino Uno as our control system. It is a microcontroller board base
 
 The last component of our project is loudspeaker sub-system consisted of a loudspeaker and an audio amplifier. we chose a 2.5W Class D Audio Amplifier to drive our loudspeaker. This amplifier is able to deliver up to 2.5 Watts speakers. The A+ and A- inputs of the amplifier go through 1.0uF capacitors, we could tie the Audio+ pin to audio signal and tie the Audio- pin to ground.
 
-Before our design procedure, we could use a block diagram to demonstrate our project including both hardware and software. 
+Considering the entire design procedure, requirements, conceptional specification and detailed specification are required.
+
+\emph{Requirement}: A basic set of requirements for the system should be satisfied: 
+
+\begin{itemize}
+\item RGB LED pixels should be arranged as a matrix and connected to each other by a single line.
+\item Audio signals should be divided into seven bands using MSGEQ7.
+\item Arduino Uno is used to control how the LEDs display, how the spectrum would be processed and so on.
+\item LED pad may work with any typical loudspeaker together.
+\end{itemize}
+
+The basic set of requirement demonstrates the fundamental functions of the system. It 
 
 \section{Technology Details/Contribution}
 
