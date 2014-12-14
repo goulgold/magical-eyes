@@ -1,0 +1,128 @@
+
+%% bare_jrnl.tex
+%% V1.4
+%% 2012/12/27
+%% by Michael Shell
+%% see http://www.michaelshell.org/
+%% for current contact information.
+%%
+%% This is a skeleton file demonstrating the use of IEEEtran.cls
+%% (requires IEEEtran.cls version 1.8 or later) with an IEEE journal paper.
+%%
+%% Support sites:
+%% http://www.michaelshell.org/tex/ieeetran/
+%% http://www.ctan.org/tex-archive/macros/latex/contrib/IEEEtran/
+%% and
+%% http://www.ieee.org/
+
+\documentclass[a4paper,journal]{IEEEtran}
+
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+\begin{document}
+
+\title{Chromatic Pad Controlled by Music}
+
+
+\author{Qiming~Guo,
+        Chuhan~Min,
+        and~Shuyao~Xie% <-this % stops a space
+        }
+
+
+% The paper headers
+\markboth{University of Pittsburgh, ECE embedded computer system design final project}%
+{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for Journals}
+
+% make the title area
+\maketitle
+
+% As a general rule, do not put math, special symbols or citations
+% in the abstract or keywords.
+\begin{abstract}
+The project will be concerned in designing and building a colorful pad built with LEDs. The system will consist of a Microprocessor that will control the LED display, a Spectrum Shield that will split an audio input into 7-bands which could be read by ADC and a LED Pad made by ourselves will show music visually. Software will be designed to implement the functions using C. 
+\end{abstract}
+
+% Note that keywords are not normally used for peerreview papers.
+\begin{IEEEkeywords}
+IEEEtran, journal, \LaTeX, paper, template.
+\end{IEEEkeywords}
+
+\section{Introduction}
+\IEEEPARstart{M}{usic} is one of the most essential components in our life. People play music by different situations, different spirit, different culture. Some people believe that they cannot live without music. Music could provide us with relaxation, give us power to struggle like a coach and encouragement. When we feel depressed, an encouraging song may guide the road while we are facing the trouble.
+
+Loudspeakers are the most common instruments to play music that has a long history. Horns were the earliest form of amplification. Horns do not use electricity. The problem with horns is that they could not amplify the sound very much. With the use of electrical amplification in the future loud sound could be generated to fill large public spaces.
+
+Modern loudspeakers are all electrodynamic. This kind of loudspeakers use an electromagnetic coil and diaphragm to create sound. This is the most common type of speaker in the world today. They use an electromagnet to turn electric signals of varying strength into movement. The coil of copper wire moves as the magnet energizes. This works using induction. The coil is connected to a diaphragm that vibrates along with the coil. Sound is created and amplified by the diaphragm. There are variations on how to build the speaker. A given speaker is designed to produce a specific frequency range. However, the principles of them are quite the same.
+
+After the above introduction of the history of loudspeakers, let us talk about sound. Sound is a form of energy passing through air. Understand sound is helpful for this project. There are two main measurements in sound, frequency and decibels. Frequency is responsible for the quality of sound in a speaker. Humans could hear audio from 20 Hz to 20 KHz, The smaller frequency is , the deeper voice is , and vice versa. The other measure of sound which is important for a speakers is the loudness measured in dB. The higher the dB, the more our eardrum pushed inward. The interesting truth is: both a whole sound and every frequency of a sound has a dB measurement.
+
+The last thing we will talk about is LEDs. A light-emitting diode(LED) is a two semiconductor light source. When a suitable voltage is applied to the leads, electrons are able to recombine with electron holes within the device, releasing energy in the form of photons. This effect is called electroluminescence, and the color of the light (corresponding to the energy of the photon) is determined by the energy band gap of the semiconductor. the emitted lights' color will change greatly from a variety of inorganic semiconductor materials. we could produce any desired color with RGB LEDs (a tricolor LED consists of Red, Green and Blue).
+
+This project will introduce a design that will come up with a colorful pad that could change its color and magnitude with the music. The idea is quite easy whereas the point is how we could implement it. Fortunately, we realized the idea at last.
+
+\section{Related Work}
+
+Regarding controlling LEDs by music, there has been a lot of products in the actual market. The most common one is stage lighting. It is the craft of lighting as it applies to the production of theatre, dance, opera and other performance arts. stage lighting has multiple functions including selective visibility, setting the tone of a scene and varying as music.  However, a lighting designer is required to schedule all lighting equipments including color gel, gobos, color wheels and other accessories. The light doesn't change with the music automatically in common. 
+
+Considering the other part of the project -- speaker -- widely used in household, many kinds of home audio speakers could be found from hundreds of dollars to thousands. All the audio systems focus on performance of sound rather than visualization. It's not suitable for every scene obviously. For instance, we have a party at home as well as play music, it would be awesome if we had some light around us that could dance with music.
+
+\section{Technical Background}
+
+We should familiar with the technical background we used, and LED comes first. This particular type of diodes are all around us. They could convert electrical energy into light. A typical looks like Figure.... The positive side of the LED is called the ?anode? and is marked by having a longer ?lead,? or leg. The other, negative side of the LED is called the ?cathode.? Current flows from the anode to the cathode and never the opposite direction. The brightness of an LED is directly dependent on how much current it draws. That means we could control the brightness of an LED by controlling the amount of current across it. If we connect an LED directly to a current source it will try to dissipate as much power as it?s allowed to draw, and will destroy itself. For this reason, we employ resistors that limit the flow of electrons in the circuit and protect the LED from trying to draw too much current.
+
+RGB LED is a little different, and a little tricky actually. It consists of there LEDs (Red, Green, Blue). We could change the brightness of any of them simultaneously to produce any color we desire.
+
+The RGB color model is an color model in which red, green, and blue light are added together in various ways to reproduce a broad array of colors. The name of the model comes from the initials of the three additive primary colors, red, green, and blue. And a certain color in the RGB color model is described by indicating how much of each of the red, green, and blue is included, each component of which can vary from zero to a defined maximum value. If all the components at zero the result is black (sometimes it's' not true); if all are maximum or at the same value, the result is white. 
+
+\section{Design Description}
+
+The functionality of the system will be divided in four major units: the board that will analyze audio signals, the embedded microcontroller that will administrate everything including the audio signal processing, controlling led display and so on, and a loudspeaker to verify the functionality that our colorful pad could work well with a loudspeaker simultaneously.
+
+How to analyze the audio signals is one of the most important parts in our project. Frequencies and decibels are two fundamental measurements to analyze a audio signals, therefore it's easy to pick up a idea that extract dominating information in terms of frequencies and decibels. As we know, any actual time-domain signal could be expressed into frequency-domain using the Fourier transform in terms of the amplitude of each of the frequencies that make it up. We could use this principle to estimate which bandwidth we concern about.
+
+There has been plenty of chips that could implement the functions of frequency analyzing, for instance, MSGEQ7 manufactured by MSI.  
+
+
+\section{Technology Details/Contribution}
+
+\section{Experimental Procedures}
+
+\section{Experimental Results}
+
+\section{Insights}
+
+\section{Conclusions and Future work}
+
+\appendices
+\section{Codes}
+Appendix one text goes here.
+
+% use section* for acknowledgement
+\section*{Acknowledgment}
+
+
+The authors would like to thank...
+
+
+% Can use something like this to put references on a page
+% by themselves when using endfloat and the captionsoff option.
+\ifCLASSOPTIONcaptionsoff
+  \newpage
+\fi
+
+\begin{thebibliography}{1}
+
+\bibitem{IEEEhowto:kopka}
+H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
+  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+
+\end{thebibliography}
+
+
+\end{document}
+
+
