@@ -84,7 +84,11 @@ The functionality of the system will be divided in four major units: the board t
 
 How to analyze the audio signals is one of the most important parts in our project. Frequencies and decibels are two fundamental measurements to analyze a audio signals, therefore it's easy to pick up a idea that extract dominating information in terms of frequencies and decibels. As we know, any actual time-domain signal could be expressed into frequency-domain using the Fourier transform in terms of the amplitude of each of the frequencies that make it up. We could use this principle to estimate which bandwidth we concern about.
 
-There has been plenty of chips that could implement the functions of frequency analyzing, for instance, MSGEQ7 manufactured by MSI. This chip divides the audio spectrum into seven bands, 63Hz, 160Hz, 400Hz, 1kHz, 2.5kHz, 6.25kHz and 16kHz. The seven frequencies are peak detected and multiplexed to the output to provide a DC repre- sentation of the amplitude of each band. As a typical application, it would fetch
+There has been plenty of chips that could implement the functions of frequency analyzing, for instance, MSGEQ7 manufactured by MSI. This chip divides the audio spectrum into seven bands, 63Hz, 160Hz, 400Hz, 1kHz, 2.5kHz, 6.25kHz and 16kHz. The seven frequencies are peak detected and multiplexed to the output to provide a DC repre- sentation of the amplitude of each band. As a typical application, it would fetch analog audio signals and output DC peak signal for measurement selected using the reset and strobe pins. Reset high resets the multiplexor. Reset low enables the strobe pin. After the first strobe leading edge, 63Hz output is on OUT. Each additional strobe leading edge advances the multiplexor one channel (63Hz, 160Hz, 400Hz, 1kHz, 2.5kHz, 6.25kHz, 16kHz etc.) and this will repeat indefinitely.
+
+To simply our project, we chose an intelligent control LED integrated light source called WS2812. It integrates control circuit and RGB chip together in a package forming a complete control of pixel point. Each primary color could achieve 256 brightness display to complete almost 16M color display and scan frequency not less than 400Hz/s. And it could work in cascading port transmission signal mode by single line. The technical details would be introduced in the following section.
+
+
 
 
 \section{Technology Details/Contribution}
