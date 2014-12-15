@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  14 DEC 2014 21:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  14 DEC 2014 23:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -120,38 +120,77 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen117
 \Gin@req@width=\dimen118
 )
-(./finalreport.aux
+(/usr/local/texlive/2014/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-LaTeX Warning: Label `fig:tas4' multiply defined.
-
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count93
+\lst@gtempboxa=\box27
+\lst@token=\toks16
+\lst@length=\count94
+\lst@currlwidth=\dimen119
+\lst@column=\count95
+\lst@pos=\count96
+\lst@lostspace=\dimen120
+\lst@width=\dimen121
+\lst@newlines=\count97
+\lst@lineno=\count98
+\lst@maxwidth=\dimen122
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
+\c@lstnumber=\count99
+\lst@skipnumbers=\count100
+\lst@framebox=\box28
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2014/03/04 1.5c listings configuration
+))
+Package: listings 2014/03/04 1.5c (Carsten Heinz)
+
+(./finalreport.aux)
 \openout1 = `finalreport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
- (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+
+(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count93
-\scratchdimen=\dimen119
-\scratchbox=\box27
-\nofMPsegments=\count94
-\nofMParguments=\count95
-\everyMPshowfont=\toks16
-\MPscratchCnt=\count96
-\MPscratchDim=\dimen120
-\MPnumerator=\count97
-\makeMPintoPDFobject=\count98
-\everyMPtoPDFconversion=\toks17
+\scratchcounter=\count101
+\scratchdimen=\dimen123
+\scratchbox=\box29
+\nofMPsegments=\count102
+\nofMParguments=\count103
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count104
+\MPscratchDim=\dimen124
+\MPnumerator=\count105
+\makeMPintoPDFobject=\count106
+\everyMPtoPDFconversion=\toks18
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -200,10 +239,12 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+\c@lstlisting=\count107
+
 <audiosignal.png, id=1, 248.00655pt x 126.4725pt>
 File: audiosignal.png Graphic file (type png)
  <use audiosignal.png>
-Package pdftex.def Info: audiosignal.png used on input line 60.
+Package pdftex.def Info: audiosignal.png used on input line 75.
 (pdftex.def)             Requested size: 226.79846pt x 115.65944pt.
 
 
@@ -218,102 +259,143 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  <./audiosignal.png>] <rgbled.jpg, id=10, 252.945pt x 231.86626pt>
 File: rgbled.jpg Graphic file (type jpg)
  <use rgbled.jpg>
-Package pdftex.def Info: rgbled.jpg used on input line 83.
+Package pdftex.def Info: rgbled.jpg used on input line 98.
 (pdftex.def)             Requested size: 226.79846pt x 207.90286pt.
 
 <frequencyaudio.png, id=11, 840.13875pt x 298.11375pt>
 File: frequencyaudio.png Graphic file (type png)
 
 <use frequencyaudio.png>
-Package pdftex.def Info: frequencyaudio.png used on input line 99.
+Package pdftex.def Info: frequencyaudio.png used on input line 114.
 (pdftex.def)             Requested size: 226.79846pt x 80.47359pt.
  <spectrumshield.jpg, id=13, 602.25pt x 602.25pt>
 File: spectrumshield.jpg Graphic file (type jpg)
 
 <use spectrumshield.jpg>
-Package pdftex.def Info: spectrumshield.jpg used on input line 107.
+Package pdftex.def Info: spectrumshield.jpg used on input line 123.
 (pdftex.def)             Requested size: 176.39923pt x 176.40323pt.
  [2 <./rgbled.jpg>]
 <arduino.jpg, id=17, 451.6875pt x 297.11pt>
 File: arduino.jpg Graphic file (type jpg)
  <use arduino.jpg>
-Package pdftex.def Info: arduino.jpg used on input line 116.
+Package pdftex.def Info: arduino.jpg used on input line 132.
 (pdftex.def)             Requested size: 226.79846pt x 149.18478pt.
 
 <audioamp.jpg, id=18, 973.6375pt x 730.73pt>
 File: audioamp.jpg Graphic file (type jpg)
  <use audioamp.jpg>
-Package pdftex.def Info: audioamp.jpg used on input line 124.
+Package pdftex.def Info: audioamp.jpg used on input line 140.
 (pdftex.def)             Requested size: 226.79846pt x 170.21631pt.
  [3 <./frequencyaudio.png> <./spectrumshield.jpg> <./arduino.jpg> <./audioamp.j
 pg>]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 136.
+(Font)              <12> on input line 151.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 136.
+(Font)              <8> on input line 151.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 136.
+(Font)              <6> on input line 151.
 
 <ledmatrix.jpg, id=23, 3276.24pt x 2457.18pt>
 File: ledmatrix.jpg Graphic file (type jpg)
  <use ledmatrix.jpg>
-Package pdftex.def Info: ledmatrix.jpg used on input line 164.
-(pdftex.def)             Requested size: 226.79846pt x 170.07051pt.
- [4 <./ledmatrix.jpg>] <timing1.png, id=29, 1037.8775pt x 337.26pt>
-File: timing1.png Graphic file (type png)
- <use timing1.png>
-Package pdftex.def Info: timing1.png used on input line 186.
-(pdftex.def)             Requested size: 361.19843pt x 117.37376pt.
+Package pdftex.def Info: ledmatrix.jpg used on input line 170.
+(pdftex.def)             Requested size: 176.39923pt x 132.27705pt.
+
+<result.png, id=24, 1165.35374pt x 699.61375pt>
+File: result.png Graphic file (type png)
+ <use result.png>
+Package pdftex.def Info: result.png used on input line 185.
+(pdftex.def)             Requested size: 176.39923pt x 105.8983pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4 <./ledmatrix.jpg> <./result.png>] <timing1.png, id=31, 1037.8775pt x 337.26
+pt>
 File: timing1.png Graphic file (type png)
 
 <use timing1.png>
-Package pdftex.def Info: timing1.png used on input line 196.
-(pdftex.def)             Requested size: 464.39685pt x 150.90617pt.
- <ledparameter.png, id=30, 745.78625pt x 184.69pt>
+Package pdftex.def Info: timing1.png used on input line 209.
+(pdftex.def)             Requested size: 361.19843pt x 117.37376pt.
+ <ledparameter.png, id=32, 745.78625pt x 184.69pt>
 File: ledparameter.png Graphic file (type png)
 
 <use ledparameter.png>
-Package pdftex.def Info: ledparameter.png used on input line 204.
-(pdftex.def)             Requested size: 464.39685pt x 115.00542pt.
- <ledcircuit.png, id=31, 681.54625pt x 164.615pt>
+Package pdftex.def Info: ledparameter.png used on input line 217.
+(pdftex.def)             Requested size: 361.19843pt x 89.44771pt.
+ <ledcircuit.png, id=33, 681.54625pt x 164.615pt>
 File: ledcircuit.png Graphic file (type png)
 
 <use ledcircuit.png>
-Package pdftex.def Info: ledcircuit.png used on input line 212.
-(pdftex.def)             Requested size: 464.39685pt x 112.1678pt.
- [5] [6 <./timing1.png> <./ledparameter.png> <./ledcircuit.png>]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 256.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 256.
- [7
+Package pdftex.def Info: ledcircuit.png used on input line 225.
+(pdftex.def)             Requested size: 361.19843pt x 87.24051pt.
 
-] (./finalreport.aux)
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
+[]\OT1/ptm/m/n/12 Hardware im-ple-men-ta-tion and de-bug -
+ []
 
-LaTeX Warning: There were multiply-defined labels.
+[5] [6 <./timing1.png> <./ledparameter.png> <./ledcircuit.png>]
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2014/03/04 1.5c listings language file
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
+)
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 282.
+
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Overfull \hbox (852.01062pt too wide) in paragraph at lines 315--317
+[][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10]
+(./finalreport.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 2249 strings out of 493117
- 36215 string characters out of 6135433
- 99755 words of memory out of 5000000
- 5693 multiletter control sequences out of 15000+600000
- 41121 words of font info for 77 fonts, out of 8000000 for 9000
+ 4172 strings out of 493117
+ 62598 string characters out of 6135433
+ 401274 words of memory out of 5000000
+ 7590 multiletter control sequences out of 15000+600000
+ 38452 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,6n,23p,1004b,224s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,7n,51p,1004b,990s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/te
 xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texl
 ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
-/2014/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texm
-f-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2014/texmf-dist/fo
-nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
-urw/times/utmri8a.pfb>
-Output written on finalreport.pdf (7 pages, 3143253 bytes).
+/2014/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texmf-dist/f
+onts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
+1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/time
+s/utmri8a.pfb>
+Output written on finalreport.pdf (10 pages, 6993545 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
+ 91 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
