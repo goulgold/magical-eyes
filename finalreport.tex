@@ -117,9 +117,15 @@ The loudspeaker testing: The speaker and audio amplifier we choosed should be te
 
 In this part of testing, the speaker and amplifier worked well to play music from any audio source.
 
-The LED 
+The LED testing: The integrated LED WS2812 is a little different from others. It would be controlled in terms of timing diagram instead of analog signal directly. Therefore, we should use Arduino Uno produce some test signal to control WS2812. We connected five chips together to verify its cascaded mode by single line. The Din pin was connected to Arduino's digital output pin. The power supply is 5VDC to drive all the color lights.
+
+The spectrum analyzer testing: MSGEQ7 chip is intelligent enough to obtain frequency information of audio signal. All we concern is the timing diagram and it will be discussed in the following section. to test this chip's function, Arduino Uno is also required to watch the analyzing output of spectrum shield we used. As introduce in chip's data sheet, reset and strobe pins are connected with Arduino's digital output pins and DC output is connected with Arduino's analog input pin.
+
+The output would be display in monitor window of Arduino IDE repeatedly. we find out the output changes with the audio's melody. It proved that this chip worked as required. 
 
 \section{Experimental Results}
+
+Since our experimental results should be shown visually. A video is the best way to exhibit.  
 
 \section{Insights}
 
