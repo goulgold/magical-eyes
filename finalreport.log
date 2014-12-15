@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  14 DEC 2014 20:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  14 DEC 2014 21:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -122,48 +122,198 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 (./finalreport.aux
 
-LaTeX Warning: Label `fig:tas' multiply defined.
+LaTeX Warning: Label `fig:tas4' multiply defined.
+
+)
+\openout1 = `finalreport.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+ (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count93
+\scratchdimen=\dimen119
+\scratchbox=\box27
+\nofMPsegments=\count94
+\nofMParguments=\count95
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count96
+\MPscratchDim=\dimen120
+\MPnumerator=\count97
+\makeMPintoPDFobject=\count98
+\everyMPtoPDFconversion=\toks17
+) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+<audiosignal.png, id=1, 248.00655pt x 126.4725pt>
+File: audiosignal.png Graphic file (type png)
+ <use audiosignal.png>
+Package pdftex.def Info: audiosignal.png used on input line 60.
+(pdftex.def)             Requested size: 226.79846pt x 115.65944pt.
 
 
-LaTeX Warning: Label `fig:tas' multiply defined.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Label `fig:tas' multiply defined.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
-LaTeX Warning: Label `fig:tas' multiply defined.
+ <./audiosignal.png>] <rgbled.jpg, id=10, 252.945pt x 231.86626pt>
+File: rgbled.jpg Graphic file (type jpg)
+ <use rgbled.jpg>
+Package pdftex.def Info: rgbled.jpg used on input line 83.
+(pdftex.def)             Requested size: 226.79846pt x 207.90286pt.
 
+<frequencyaudio.png, id=11, 840.13875pt x 298.11375pt>
+File: frequencyaudio.png Graphic file (type png)
 
-LaTeX Warning: Label `fig:tas' multiply defined.
+<use frequencyaudio.png>
+Package pdftex.def Info: frequencyaudio.png used on input line 99.
+(pdftex.def)             Requested size: 226.79846pt x 80.47359pt.
+ <spectrumshield.jpg, id=13, 602.25pt x 602.25pt>
+File: spectrumshield.jpg Graphic file (type jpg)
 
+<use spectrumshield.jpg>
+Package pdftex.def Info: spectrumshield.jpg used on input line 107.
+(pdftex.def)             Requested size: 176.39923pt x 176.40323pt.
+ [2 <./rgbled.jpg>]
+<arduino.jpg, id=17, 451.6875pt x 297.11pt>
+File: arduino.jpg Graphic file (type jpg)
+ <use arduino.jpg>
+Package pdftex.def Info: arduino.jpg used on input line 116.
+(pdftex.def)             Requested size: 226.79846pt x 149.18478pt.
 
-LaTeX Warning: Label `fig:tas' multiply defined.
+<audioamp.jpg, id=18, 973.6375pt x 730.73pt>
+File: audioamp.jpg Graphic file (type jpg)
+ <use audioamp.jpg>
+Package pdftex.def Info: audioamp.jpg used on input line 124.
+(pdftex.def)             Requested size: 226.79846pt x 170.21631pt.
+ [3 <./frequencyaudio.png> <./spectrumshield.jpg> <./arduino.jpg> <./audioamp.j
+pg>]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 136.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 136.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 136.
 
+<ledmatrix.jpg, id=23, 3276.24pt x 2457.18pt>
+File: ledmatrix.jpg Graphic file (type jpg)
+ <use ledmatrix.jpg>
+Package pdftex.def Info: ledmatrix.jpg used on input line 164.
+(pdftex.def)             Requested size: 226.79846pt x 170.07051pt.
+ [4 <./ledmatrix.jpg>] <timing1.png, id=29, 1037.8775pt x 337.26pt>
+File: timing1.png Graphic file (type png)
+ <use timing1.png>
+Package pdftex.def Info: timing1.png used on input line 186.
+(pdftex.def)             Requested size: 361.19843pt x 117.37376pt.
+File: timing1.png Graphic file (type png)
 
-./finalreport.aux:23: LaTeX Error: Missing \begin{document}.
+<use timing1.png>
+Package pdftex.def Info: timing1.png used on input line 196.
+(pdftex.def)             Requested size: 464.39685pt x 150.90617pt.
+ <ledparameter.png, id=30, 745.78625pt x 184.69pt>
+File: ledparameter.png Graphic file (type png)
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.23 <
-      <<<<<< Updated upstream
-? 
-./finalreport.aux:23: Emergency stop.
- ...                                              
-                                                  
-l.23 <
-      <<<<<< Updated upstream
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<use ledparameter.png>
+Package pdftex.def Info: ledparameter.png used on input line 204.
+(pdftex.def)             Requested size: 464.39685pt x 115.00542pt.
+ <ledcircuit.png, id=31, 681.54625pt x 164.615pt>
+File: ledcircuit.png Graphic file (type png)
 
- 
+<use ledcircuit.png>
+Package pdftex.def Info: ledcircuit.png used on input line 212.
+(pdftex.def)             Requested size: 464.39685pt x 112.1678pt.
+ [5] [6 <./timing1.png> <./ledparameter.png> <./ledcircuit.png>]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 256.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 256.
+ [7
+
+] (./finalreport.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1489 strings out of 493117
- 24378 string characters out of 6135433
- 78046 words of memory out of 5000000
- 5006 multiletter control sequences out of 15000+600000
- 22603 words of font info for 50 fonts, out of 8000000 for 9000
- 1144 hyphenation exceptions out of 8191
- 27i,0n,19p,232b,101s stack positions out of 5000i,500n,10000p,200000b,80000s
-./finalreport.aux:23:  ==> Fatal error occurred, no output PDF file produced!
+ 2249 strings out of 493117
+ 36215 string characters out of 6135433
+ 99755 words of memory out of 5000000
+ 5693 multiletter control sequences out of 15000+600000
+ 41121 words of font info for 77 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 37i,6n,23p,1004b,224s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2014/texmf-dist/fo
+nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
+urw/times/utmri8a.pfb>
+Output written on finalreport.pdf (7 pages, 3143253 bytes).
+PDF statistics:
+ 76 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -19,10 +19,6 @@
 
 \usepackage{graphicx}
 
-% correct bad hyphenation here
-\hyphenation{op-tical net-works semi-conduc-tor}
-
-
 \begin{document}
 
 \title{Chromatic Pad Controlled by Music}
@@ -49,7 +45,7 @@ The project will be concerned in designing and building a colorful pad built wit
 
 % Note that keywords are not normally used for peerreview papers.
 \begin{IEEEkeywords}
-IEEEtran, journal, \LaTeX, paper, template.
+spectrum analyzing, LED driving
 \end{IEEEkeywords}
 
 \section{Introduction}
@@ -58,12 +54,12 @@ IEEEtran, journal, \LaTeX, paper, template.
 Loudspeakers are the most common instruments to play music that has a long history. Horns were the earliest form of amplification. Horns do not use electricity. The problem with horns is that they could not amplify the sound very much. With the use of electrical amplification in the future loud sound could be generated to fill large public spaces.
 
 Modern loudspeakers are all electrodynamic. This kind of loudspeakers use an electromagnetic coil and diaphragm to create sound. This is the most common type of speaker in the world today. They use an electromagnet to turn electric signals of varying strength into movement. The coil of copper wire moves as the magnet energizes. This works using induction. The coil is connected to a diaphragm that vibrates along with the coil. Sound is created and amplified by the diaphragm. There are variations on how to build the speaker. A given speaker is designed to produce a specific frequency range. However, the principles of them are quite the same.
-\begin{figure}[ht]
+\begin{figure}[h]
   \centering
   % Requires \usepackage{graphicx}
   \includegraphics[width=0.9\linewidth]{audiosignal.png}
   \caption{typical audio signal}
-  \label{fig:tas1}
+  \label{fig:as}
 \end{figure}
 After the above introduction of the history of loudspeakers, let us talk about sound. Sound is a form of energy passing through air. Understand sound is helpful for this project. There are two main measurements in sound, frequency and decibels. Frequency is responsible for the quality of sound in a speaker. Humans could hear audio from 20 Hz to 20 KHz, The smaller frequency is , the deeper voice is , and vice versa. The other measure of sound which is important for a speakers is the loudness measured in dB. The higher the dB, the more our eardrum pushed inward. The interesting truth is: both a whole sound and every frequency of a sound has a dB measurement.
 
@@ -79,13 +75,13 @@ Considering the other part of the project -- speaker -- widely used in household
 
 \section{Technical Background}
 
-We should familiar with the technical background we used, and LED comes first. This particular type of diodes are all around us. They could convert electrical energy into light. A typical looks like Figure.... The positive side of the LED is called the ?anode? and is marked by having a longer ?lead,? or leg. The other, negative side of the LED is called the ?cathode.? Current flows from the anode to the cathode and never the opposite direction. The brightness of an LED is directly dependent on how much current it draws. That means we could control the brightness of an LED by controlling the amount of current across it. If we connect an LED directly to a current source it will try to dissipate as much power as it?s allowed to draw, and will destroy itself. For this reason, we employ resistors that limit the flow of electrons in the circuit and protect the LED from trying to draw too much current.
+We should familiar with the technical background we used, and LED comes first. This particular type of diodes are all around us. They could convert electrical energy into light. A typical looks like Figure.... The positive side of the LED is called the anode and is marked by having a longer lead or leg. The other, negative side of the LED is called the cathode. Current flows from the anode to the cathode and never the opposite direction. The brightness of an LED is directly dependent on how much current it draws. That means we could control the brightness of an LED by controlling the amount of current across it. If we connect an LED directly to a current source it will try to dissipate as much power as it?s allowed to draw, and will destroy itself. For this reason, we employ resistors that limit the flow of electrons in the circuit and protect the LED from trying to draw too much current.
 \begin{figure}[ht]
   \centering
   % Requires \usepackage{graphicx}
   \includegraphics[width=0.9\linewidth]{rgbled.jpg}
-  \caption{typical audio signal}
-  \label{fig:tas2}
+  \caption{an Integrated RGB LED}
+  \label{fig:rgbled}
 \end{figure}
 RGB LED is a little different, and a little tricky actually. It consists of there LEDs (Red, Green, Blue). We could change the brightness of any of them simultaneously to produce any color we desire.
 
@@ -100,15 +96,15 @@ How to analyze the audio signals is one of the most important parts in our proje
   \centering
   % Requires \usepackage{graphicx}
   \includegraphics[width=0.9\linewidth]{frequencyaudio.png}
-  \caption{typical audio signal}
-  \label{fig:tas3}
+  \caption{seven bands of audio signal}
+  \label{fig:fras}
 \end{figure}
 There has been plenty of chips that could implement the functions of frequency analyzing, for instance, MSGEQ7 manufactured by MSI. This chip divides the audio spectrum into seven bands, 63Hz, 160Hz, 400Hz, 1kHz, 2.5kHz, 6.25kHz and 16kHz. The seven frequencies are peak detected and multiplexed to the output to provide a DC representation of the amplitude of each band. As a typical application, it would fetch analog audio signals and output DC peak signal for measurement selected using the reset and strobe pins. Reset high resets the multiplexor. Reset low enables the strobe pin. After the first strobe leading edge, 63Hz output is on OUT. Each additional strobe leading edge advances the multiplexor one channel (63Hz, 160Hz, 400Hz, 1kHz, 2.5kHz, 6.25kHz, 16kHz etc.) and this will repeat indefinitely.
 \begin{figure}[ht]
   \centering
   % Requires \usepackage{graphicx}
   \includegraphics[width=0.7\linewidth]{spectrumshield.jpg}
-  \caption{typical audio signal}
+  \caption{Spectrum Shield}
   \label{fig:tas4}
 \end{figure}
 
@@ -117,16 +113,16 @@ To simply our project, we chose an intelligent control LED integrated light sour
   \centering
   % Requires \usepackage{graphicx}
   \includegraphics[width=0.9\linewidth]{arduino.jpg}
-  \caption{typical audio signal}
-  \label{fig:tas4}
+  \caption{Arduino Uno}
+  \label{fig:arduino}
 \end{figure}
 We use the Arduino Uno as our control system. It is a microcontroller board based on the ATmega328. It has 14 digital input/output pins (of which 6 can be used as PWM outputs), 6 analog inputs, a 16 MHz ceramic resonator, a USB connection, a power jack, an ICSP header, and a reset button. It contains everything needed to support the microcontroller; simply connect it to a computer with a USB cable or power it with a AC-to-DC adapter or battery to get started.
 \begin{figure}[ht]
   \centering
   % Requires \usepackage{graphicx}
   \includegraphics[width=0.9\linewidth]{audioamp.jpg}
-  \caption{typical audio signal}
-  \label{fig:tas5}
+  \caption{Audio Amplifier}
+  \label{fig:aa}
 \end{figure}
 
 The last component of our project is loudspeaker sub-system consisted of a loudspeaker and an audio amplifier. we chose a 2.5W Class D Audio Amplifier to drive our loudspeaker. This amplifier is able to deliver up to 2.5 Watts speakers. The A+ and A- inputs of the amplifier go through 1.0uF capacitors, we could tie the Audio+ pin to audio signal and tie the Audio- pin to ground.
@@ -134,7 +130,6 @@ The last component of our project is loudspeaker sub-system consisted of a louds
 Considering the entire design procedure, requirements, conceptional specification and detailed specification are required.
 
 \emph{Requirement}: A basic set of requirements for the system should be satisfied: 
-
 \begin{itemize}
 \item RGB LED pixels should be arranged as a matrix and connected to each other by a single line.
 \item Audio signals should be divided into seven bands using MSGEQ7.
@@ -143,6 +138,8 @@ Considering the entire design procedure, requirements, conceptional specificatio
 \end{itemize}
 
 The basic set of requirements demonstrates the fundamental functions of the system. Briefly, both hardware and software work together to implement all the requirements.
+
+specification
 
 \section{Experimental Procedures}
 
@@ -165,7 +162,7 @@ At last, we should combine them together to make sure all sub-system could work 
   \centering
   % Requires \usepackage{graphicx}
   \includegraphics[width=0.9\linewidth]{ledmatrix.jpg}
-  \caption{typical audio signal}
+  \caption{LED matrix made by ourselves}
   \label{fig:tas6}
 \end{figure}
 Since our experimental results should be shown visually. A video is the best way to exhibit. We would present some images to figure out how it works. The audio signal transmitted from laptop to spectrum analyzer and was divided to different bands. The Arduino would process the result and control the LED matrix as designed. 
@@ -193,7 +190,7 @@ Another issue is the LED configuration, below is a LED characteristic parameter 
 Before communicating to the Arduino IDE, the audio signal has to be split into seven frequencies via spectrum shield. The output of the spectrum shield is an array of amplitude of each frequency. The amplitude of each frequency ranges from 0 to 1023. To utilize the amplitude to control the on/off of a LED on a strip, the amplitude has to be mapped to 0 to 255 indicating the RGB color range. Once the audio signal has been transform into digital signal and received by the Arduino IDE, a parameter scalar is applied to manipulate the amplitude such that the color pad can operate as expected even when the audio volume is too high or too low for our system. Since the LED cannot actually display black pixel {0,0,0}, the gradient color map is implemented via a HSV to RGB converter. The value(V) is fixed to 100\% to ensure that the black pixel is excluded. Each column shares the same hue(H) and elements in a column are assigned to a descending saturation(S) to form a gradient map.
 \subsection{Testing}
 \subsection{Trouble Shooting}
-=======
+\begin{figure*}
   \centering
   % Requires \usepackage{graphicx}
   \includegraphics[width=0.9\linewidth]{timing1.png}
@@ -222,9 +219,10 @@ Before communicating to the Arduino IDE, the audio signal has to be split into s
 Once the audio signal has been transform into digital signal and received by the Arduino IDE, a parameter scalar is applied to manipulate the amplitude such that the color pad can operate as expected even when the audio volume is too high or too low for our system.
 
 Since the LED cannot actually display black pixel {0,0,0}, the gradient color map is implemented via a HSV to RGB converter. The value(V) is fixed to 100\% to ensure that the black pixel is excluded. Each column shares the same hue(H) and elements in a column are assigned to a descending saturation(S) to form a gradient map.
->>>>>>> Stashed changes
 \section{Insights}
+The primary motivation of the design is to combine audioception with ophthalmoception to achieve a entertainment effect. With delicate fabrication, the fancy design can be applied to a variety of apparel and decoration, at the same it provides the possibility for people to explore their own style.
 
+The project is dealing with analog input, the objective is to turn it into a digital signal to control the on/off of each LED. To accomplish that, the seven frequencies are peak detected and multiplexed to provide a DC representation of the amplitude of each band. During the process, a standard analog signal is transformed into frequency domain. The intermediate function is a continuous power density spectrum. To develop spectral leakage at peak frequencies, a window function is convoluted with frequency. In this case, the window function is a Gaussian function. In this way, the amplitude of seven frequencies are filtered and selected.
 \section{Conclusions and Future work}
 This paper presented a design for a audio controlled chromatic LED pad system. A spectrum shield is used to split the frequency that is being read by an Arduino micro-controller board and relying the results to Arduino IDE that produces the expected color index for each strobe on the pre-configured gradient color pad.
 Further optimization of the hardware design may include: 
