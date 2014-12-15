@@ -139,15 +139,11 @@ This section will describe each of the design stages that have been implemented 
 Timing requirement is the primary concern of the hardware implementation. According to the WS2812 handbook, the data transfer time of LED is $1.25\mu s \pm 600ns$. While the Arduino clock frequency is $60ns$, it's sufficient to fulfill the timing requirement of LED.
 
 As for the spectrum shield, the MSGEQ7 strobe timing diagram shows that the strobe is enabled by the reset low and then each additional strobe leading edge advances the multiplexor one channel with seven bands. Considering the output settling time $36\mu s$, there is a delay of 1ms per band for the strobe read process.
-
-\begin{figure*}[ht]
-  \centering
+\begin{figure*}
   % Requires \usepackage{graphicx}
   \includegraphics[width=0.7\linewidth]{timing1.png}
   \caption{The Fruit Ninjia Sreen}
-  \label{fig:fruit}
 \end{figure*}
-
 Another issue is the LED configuration, below is a LED characteristic parameter table. The circuit utilizes a cascade method to transfer data. For a single LED, each 0-255 number is transformed into 8bits and then composite a 24bits data. Data is sent following the order of GRB in which the high bit is sent at first. For a strip, the LED number is configured and data sent by the micro-controller travel through each LED unit during a data refresh cycle.\subsection{Software}
 Before communicating to the Arduino IDE, the audio signal has to be split into seven frequencies via spectrum shield. The output of the spectrum shield is an array of amplitude of each frequency. The amplitude of each frequency ranges from 0 to 1023. To utilize the amplitude to control the on/off of a LED on a strip, the amplitude has to be mapped to 0 to 255 indicating the RGB color range. Once the audio signal has been transform into digital signal and received by the Arduino IDE, a parameter scalar is applied to manipulate the amplitude such that the color pad can operate as expected even when the audio volume is too high or too low for our system. Since the LED cannot actually display black pixel {0,0,0}, the gradient color map is implemented via a HSV to RGB converter. The value(V) is fixed to 100\% to ensure that the black pixel is excluded. Each column shares the same hue(H) and elements in a column are assigned to a descending saturation(S) to form a gradient map.
 \subsection{Testing}
